@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#replaceImg" pickOnBounds="true" preserveRatio="true" />
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #FF3030;">
+               <children>
+                  <Text fx:id="hour" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="min" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="sec" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #BBDDFF; -fx-background-radius: 20px;">
+               <children>
+                  <Text fill="RED" onMouseClicked="#lower" strokeType="OUTSIDE" strokeWidth="0.0" text="初级" textAlignment="CENTER">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #6688AA; -fx-background-radius: 20px;">
+               <children>
+                  <Text fill="BLUE" onMouseClicked="#middle" strokeType="OUTSIDE" strokeWidth="0.0" text="中级" textAlignment="CENTER">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #113355; -fx-background-radius: 20px;">
+               <children>
+                  <Text fill="LIME" onMouseClicked="#higher" strokeType="OUTSIDE" strokeWidth="0.0" text="高级" textAlignment="CENTER">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #EE7600; -fx-background-radius: 20px;">
+               <children>
+                  <Text fill="BLUE" onMouseClicked="#start" strokeType="OUTSIDE" strokeWidth="0.0" text="开始" textAlignment="CENTER">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #B5B5B5; -fx-background-radius: 20px;">
+               <children>
+                  <Text fill="RED" onMouseClicked="#pause" strokeType="OUTSIDE" strokeWidth="0.0" text="暂停" textAlignment="CENTER">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFE0; -fx-background-radius: 20px;">
+               <children>
+                  <Text onMouseClicked="#exit" strokeType="OUTSIDE" strokeWidth="0.0" text="退出游戏" textAlignment="CENTER">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+      <GridPane fx:id="gridPane" onMouseClicked="#runGame" prefHeight="600.0" prefWidth="600.0">
+      </GridPane>
+   </children>
+</HBox>
