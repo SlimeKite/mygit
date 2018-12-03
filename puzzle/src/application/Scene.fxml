@@ -13,8 +13,12 @@
    <children>
       <VBox prefHeight="600.0" prefWidth="200.0">
          <children>
-            <ImageView fx:id="image" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#replaceImg" pickOnBounds="true" preserveRatio="true" />
-            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #FF3030;">
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="image" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#replaceImg" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #FF3030;">
                <children>
                   <Text fx:id="hour" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
                      <font>
@@ -46,7 +50,7 @@
                   <Insets />
                </opaqueInsets>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #BBDDFF; -fx-background-radius: 20px;">
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="200.0" style="-fx-background-color: #BBDDFF; -fx-background-radius: 20px;">
                <children>
                   <Text fill="RED" onMouseClicked="#lower" strokeType="OUTSIDE" strokeWidth="0.0" text="初级" textAlignment="CENTER">
                      <font>
@@ -91,7 +95,7 @@
                   </Text>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFE0; -fx-background-radius: 20px;">
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #FFFFE0; -fx-background-radius: 20px;">
                <children>
                   <Text onMouseClicked="#exit" strokeType="OUTSIDE" strokeWidth="0.0" text="退出游戏" textAlignment="CENTER">
                      <font>
